@@ -497,7 +497,7 @@ install -m 0755 ocm %{buildroot}%{_bindir}
 
 %clean
 # This is necessary because Go writes its cache files and directories without
-# write permission, and that means that a rgular `rm` can't remove them.
+# write permission, and that means that a regular `rm` can't remove them.
 find .gopath -exec chmod +w {} \;
 rm -rf .gopath
 
